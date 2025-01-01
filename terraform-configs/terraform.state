@@ -1,7 +1,7 @@
 {
   "version": 4,
   "terraform_version": "1.9.5",
-  "serial": 6,
+  "serial": 8,
   "lineage": "f4b2dba1-3192-23f3-cbda-bc73855bcc19",
   "outputs": {},
   "resources": [
@@ -50,7 +50,7 @@
             "dry_run": false,
             "embed_certs": false,
             "enable_default_cni": false,
-            "extra_config": null,
+            "extra_config": [],
             "extra_disks": 0,
             "feature_gates": "",
             "force": false,
@@ -129,7 +129,7 @@
             [
               {
                 "type": "get_attr",
-                "value": "client_key"
+                "value": "client_certificate"
               }
             ],
             [
@@ -141,7 +141,7 @@
             [
               {
                 "type": "get_attr",
-                "value": "client_certificate"
+                "value": "client_key"
               }
             ]
           ],
